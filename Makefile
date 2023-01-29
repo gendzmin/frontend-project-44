@@ -9,3 +9,6 @@ publish: #Публикация пакета в npm
 
 lint: #Запуск линтера
 	npx eslint .
+
+brain-even: #Запуск игры brain-even
+	node bin/brain-even.js
