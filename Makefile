@@ -10,5 +10,7 @@ publish: #Публикация пакета в npm
 lint: #Запуск линтера
 	npx eslint .
 
+lint-fix: #Запуск линтера с опцией --fix
+	npx eslint . --fix
 brain-even: #Запуск игры brain-even
 	node bin/brain-even.js
