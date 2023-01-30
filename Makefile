@@ -1,6 +1,9 @@
 install: #Установка модулей согласно package-lock.json
 	npm ci
 
+link: #Установка пакета из операционной системы
+	npm link
+
 brain-games: #Запуск bin/brain-games.js
 	node bin/brain-games.js
 
@@ -12,5 +15,9 @@ lint: #Запуск линтера
 
 lint-fix: #Запуск линтера с опцией --fix
 	npx eslint . --fix
+
 brain-even: #Запуск игры brain-even
 	node bin/brain-even.js
+
+brain-calc: #Запуск игры brain-calc
+	node bin/brain-calc.js
