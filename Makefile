@@ -25,3 +25,5 @@ brain-calc: #Запуск игры brain-calc
 code: #Запуск VS Code
 	code .
 
+restore: #Откат к последнему коммиту
+	git reset --hard HEAD
