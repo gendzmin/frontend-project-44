@@ -5,15 +5,11 @@ export default () => {
   const userName = readlineSync.question('May I have your name? ');
   console.log('What is the result of the expression?');
   for (let i = 0; i !== 3; i += 1) {
-    const numGen = () => { // Функция генерации числа
-      return Math.round(Math.random() * 10);
-    };
+    const numGen = () => Math.round(Math.random() * 10); // Функция генерации числа
     const num1 = numGen(); // Сгенерированные числа
     const num2 = numGen();
     const operArr = ['+', '-', '*']; // Массив операторов
-    const operGen = () => { // Функция генерации оператора
-      return Math.floor(Math.random() * (3 - 0) + 0);
-    };
+    const operGen = () => Math.floor(Math.random() * (3 - 0) + 0); // Функция генерации оператора
     const operType = operArr[operGen()]; // Выбор оператора
     let corAnswer = 0;
     switch (operType) {
