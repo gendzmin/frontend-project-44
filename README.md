@@ -8,3 +8,6 @@ Parity game
 
 Calculus game
 [![asciicast](https://asciinema.org/a/818gBvTB9ouaeii13HWQ2MHvu.svg)](https://asciinema.org/a/818gBvTB9ouaeii13HWQ2MHvu)
+
+GCD game
+[![asciicast](https://asciinema.org/a/556949.svg)](https://asciinema.org/a/556949)
