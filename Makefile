@@ -22,6 +22,9 @@ brain-even: #Запуск игры brain-even
 brain-calc: #Запуск игры brain-calc
 	node bin/brain-calc.js
 
+brain-gcd: #Запуск игры brain-gcd
+	node bin/brain-gcd.js
+
 code: #Запуск VS Code
 	code .
 
