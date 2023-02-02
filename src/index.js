@@ -5,7 +5,7 @@ const getRandomNum = () => Math.floor(Math.random() * (100 - 0) + 0); // Фун-
 const gameTemplate = (gameCore) => {
   console.log('Welcome to the Brain Games!'); // Приветствие
   const userName = readlineSync.question('May I have your name? '); // Объявление и инициализация переменной - имени пользователя
-  console.log(`Hello, ${userName}`); // Приветствие игрока
+  console.log(`Hello, ${userName}!`); // Приветствие игрока
   const ruleSet = gameCore()[0]; // Вывод на экран правил (1ый элемент массива из функции ядра игры)
   console.log(ruleSet);
   for (let i = 0; i !== 3; i += 1) { // Цикл с тремя итерациями - игровой процесс
@@ -13,11 +13,12 @@ const gameTemplate = (gameCore) => {
     const question = gameData[1]; // Запись в переменную вопроса (2й элемент массива )
     const corAnswer = gameData[2]; // Запись в переменную правильного ответа (3й элемент массива)
     const userAnswer = readlineSync.question(`Question: ${question} `); // Получение ответа игрока
+    console.log(`Your answer: ${userAnswer}`); // Вывод на экран ответа игрока
     if (userAnswer === corAnswer) { // Проверка правильности ответа через if
       console.log('Correct!'); // Продолжаем цикл, если ответ правильный
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${corAnswer}'.`); // Возвращаем функцию, если ответ неправильный
-      console.log(`Let's try again, ${userName}`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
   }

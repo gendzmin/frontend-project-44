@@ -33,3 +33,6 @@ code: #Запуск VS Code
 
 restore: #Откат к последнему коммиту
 	git reset --hard HEAD
+
+rec: #Запись аскинемы
+	asciinema rec
