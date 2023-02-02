@@ -11,7 +11,7 @@ extends:
   - 'plugin:jest/recommended'
 
 rules:
-  linebreak-style: ["error", "windows"]
+  "linebreak-style": ["error", "windows"]
   no-console: 0
   import/extensions: 
     - error

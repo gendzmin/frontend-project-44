@@ -2,7 +2,10 @@ install: #Установка модулей согласно package-lock.json
 	npm ci
 
 link: #Установка пакета из операционной системы
-	npm link
+	sudo npm link
+
+unlink: #Удаление пакетов
+	sudo npm unlink -g
 
 brain-games: #Запуск bin/brain-games.js
 	node bin/brain-games.js
