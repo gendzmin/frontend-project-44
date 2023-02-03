@@ -16,7 +16,7 @@ const gameCore = () => {
   const progStep = getRandomNum(11, 3); // Генерация шага последовательности - от 3 до 10
   const progSequence = getProgSequence(progLength, progFirstNum, progStep); // Переменная с последов
   const progAbsentNum = getRandomNum(progLength - 1); // Перем. со случ. элем. последов - не > длины
-  const corAnswer = `${progSequence[progAbsentNum]}`; // Объявление и иниц. переменной правильного ответа
+  const corAnswer = progSequence[progAbsentNum]; // Объявление и иниц. переменной правильного ответа
   progSequence[progAbsentNum] = '..'; // Замена нужного элемента последовательности на плейсхолдер
   const question = progSequence.join(' '); // Объявление и инициализация строки-вопроса
   return [ruleSet, question, corAnswer]; // Функция возвращает правила, вопрос и правильный ответ
