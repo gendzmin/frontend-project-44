@@ -10,6 +10,16 @@ Incorrect answers end the game and prompt you to play it again.
 **`GCD game`** - Determining the greatest common divisor.  
 **`Primality game`** - Determining a prime number.  
 
+### Requirments
+Node.js v17.6  
+Windows 10 with WSL / macOS 10.15+ / any Linux distributive.  
+
+### Installation
+1. Clone this repository to create a local copy on your computer;  
+2. Open your new local repository;  
+3. Use <npm install> and <sudo npm link> commands;
+4. To play games, use commands given in <Makefile> or <pasckage.json>.
+
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/gendzmin/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/gendzmin/frontend-project-44/actions)
