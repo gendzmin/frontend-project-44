@@ -7,9 +7,9 @@ const gameCore = () => {
     for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {
       if (num % i === 0) {
         return 'no';
-        }
       }
-    return num > 1 ? "yes" : "no";
+    }
+    return num > 1 ? 'yes' : 'no';
   };
   const corAnswer = getPrimality(question); // // Объяв. и иниц. прав. ответа - строки `yes` / `no`
   return [ruleSet, question, corAnswer]; // Функция возвращает правила, вопрос и правильный ответ
