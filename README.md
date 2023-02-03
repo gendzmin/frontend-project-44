@@ -17,7 +17,7 @@ Windows 10 with WSL / macOS 10.15+ / any Linux distributive.
 ### Installation
 1. Clone this repository to create a local copy on your computer;  
 2. Open your new local repository;  
-3. Use `**npm install`** and `**sudo npm link`** commands;
+3. Use **`npm install`** and **`sudo npm link`** commands;
 4. To play games, use commands given in **`Makefile`** or **`pasckage.json`**.
 
 
