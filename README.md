@@ -14,3 +14,6 @@ GCD game
 
 Progression game
 [![asciicast](https://asciinema.org/a/557092.svg)](https://asciinema.org/a/557092)
+
+Primality game
+[![asciicast](https://asciinema.org/a/557107.svg)](https://asciinema.org/a/557107)
