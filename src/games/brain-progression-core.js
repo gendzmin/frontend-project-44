@@ -2,7 +2,7 @@ import { getRandomNum, gameTemplate } from '../index.js'; // Импортиру�
 
 const gameCore = () => {
   const ruleSet = 'What number is missing in the progression?'; // Правила для игры-прогрессии
-  const progLength = getRandomNum(11, 5); // Генерация длины последовательности - от 5 до 10
+  const progLength = getRandomNum(11, 6); // Генерация длины последовательности - от 6 до 10
   const progFirstNum = getRandomNum(); // Генерация первого числа последовательности
   const progStep = getRandomNum(11, 3); // Генерация шага последовательности - от 3 до 10
   const getProgSequence = (length, first, step) => { // Функция генерации последовательности
