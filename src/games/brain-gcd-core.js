@@ -11,7 +11,7 @@ const gameCore = () => {
   const num1 = getRandomNum(100, 1); // Получение двух сгенерированных чисел
   const num2 = getRandomNum(num1, 1); // Второе число < первого - для корректной работы функции НОД
   const question = `${num1} ${num2}`; // Объявление и инициализация строки-вопроса
-  const corAnswer = (`${getGrComDiv(num1, num2)}`); // Объявление и иниц. переменной правильного ответа
+  const corAnswer = getGrComDiv(num1, num2); // Объявление и иниц. переменной правильного ответа
   return [ruleSet, question, corAnswer]; // Функция возвращает правила, вопрос и правильный ответ
 };
 
