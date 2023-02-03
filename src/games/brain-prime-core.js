@@ -9,8 +9,7 @@ const gameCore = () => {
       if ((num % divisors[i] === 0) && (!divisors.includes(num))) {
         return 'no';
       }
-    }
-    return 'yes';
+    } return 'yes';
   };
   const corAnswer = getPrimality(question); // // Объяв. и иниц. прав. ответа - строки `yes` / `no`
   return [ruleSet, question, corAnswer]; // Функция возвращает правила, вопрос и правильный ответ
