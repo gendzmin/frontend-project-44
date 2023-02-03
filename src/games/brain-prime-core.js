@@ -8,7 +8,7 @@ const gameCore = () => {
       if (num % i === 0) {
         return 'no';
       }
-    return 'yes';
+    return num > 1 ? "yes" : "no";
   };
   const corAnswer = getPrimality(question); // // Объяв. и иниц. прав. ответа - строки `yes` / `no`
   return [ruleSet, question, corAnswer]; // Функция возвращает правила, вопрос и правильный ответ
