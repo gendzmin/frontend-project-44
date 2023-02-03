@@ -1,6 +1,7 @@
 ### Description
-"Brain Games" is a set of five console games based on the popular mobile brain-pumping apps.  
-Each game asks questions that need to be answered correctly. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt you to play it again.
+"Brain Games" is a set of five console games based on the popular mobile brain-pumping apps.   
+Each game asks questions that need to be answered correctly. After three correct answers, the game is considered completed.  
+Incorrect answers end the game and prompt you to play it again.  
 
 ### Games:
 **`Calculus game`** - Calculating arithmetic expressions.  
@@ -16,7 +17,6 @@ Each game asks questions that need to be answered correctly. After three correct
 [![Maintainability](https://api.codeclimate.com/v1/badges/d3df1974005f6b4bc462/maintainability)](https://codeclimate.com/github/gendzmin/frontend-project-44/maintainability)
 
 ### Game tests:
-
 
 Calculus game
 [![asciicast](https://asciinema.org/a/818gBvTB9ouaeii13HWQ2MHvu.svg)](https://asciinema.org/a/818gBvTB9ouaeii13HWQ2MHvu)

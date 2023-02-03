@@ -6,7 +6,10 @@ const gameCore = () => {
   const getPrimality = (num) => { // Функция, проверяющая простоту числа
     const divisors = [2, 3, 5, 7];
     for (let i = 0; i !== 4; i += 1) {
-      if ((num % divisors[i] === 0) && (!divisors.includes(num))) {
+      if (divisors.includes(num)) {
+        return 'yes';
+      }
+      if (num % divisors[i] === 0) {
         return 'no';
       }
     }
