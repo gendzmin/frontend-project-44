@@ -22,7 +22,7 @@ Calculus game
 [![asciicast](https://asciinema.org/a/557126.svg)](https://asciinema.org/a/557126)
 
 Progression game
-[![asciicast](https://asciinema.org/a/557129.svg)](https://asciinema.org/a/557129)
+[![asciicast](https://asciinema.org/a/557164.svg)](https://asciinema.org/a/557164)
 
 Parity game
 [![asciicast](https://asciinema.org/a/557131.svg)](https://asciinema.org/a/557131)

@@ -18,7 +18,7 @@ const gameCore = () => {
   const progAbsentNum = getRandomNum(progLength - 1); // Перем. со случ. элем. последов - не > длины
   const corAnswer = `${progSequence[progAbsentNum]}`; // Объявление и иниц. переменной правильного ответа
   progSequence[progAbsentNum] = '..'; // Замена нужного элемента последовательности на плейсхолдер
-  const question = `${progSequence}`; // Объявление и инициализация строки-вопроса
+  const question = progSequence.join(' '); // Объявление и инициализация строки-вопроса
   return [ruleSet, question, corAnswer]; // Функция возвращает правила, вопрос и правильный ответ
 };
 
