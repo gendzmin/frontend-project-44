@@ -4,15 +4,15 @@ const getPrimality = (num) => { // Функция, проверяющая про
   const divisors = [2, 3, 5, 7];
   for (let i = 0; i !== 4; i += 1) {
     if (num % divisors[i] === 0 && !divisors.includes(num)) {
-      return 'no';
+      return false;
     }
   }
-  return 'yes';
+  return true;
 };
 const gameCore = () => {
   const ruleSet = 'Answer "yes" if given number is prime. Otherwise answer "no". '; // Правила для игры в чётность
   const question = getRandomNum(); // Объявление и инициализация вопроса - рандомного числа
-  const corAnswer = getPrimality(question); // // Объяв. и иниц. прав. ответа - строки `yes` / `no`
+  const corAnswer = getPrimality(question) ? 'yes' : 'no'; // // Объяв. и иниц. прав. ответа
   return [ruleSet, question, corAnswer]; // Функция возвращает правила, вопрос и правильный ответ
 };
 
