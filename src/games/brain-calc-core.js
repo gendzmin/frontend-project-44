@@ -10,16 +10,16 @@ const gameCore = () => {
   let corAnswer = 0; // Объявление переменной правильного ответа и её инициализация через switch
   switch (operType) {
     case '+':
-      corAnswer = (num1 + num2).toString();
+      corAnswer = num1 + num2;
       break;
     case '-':
-      corAnswer = (num1 - num2).toString();
+      corAnswer = num1 - num2;
       break;
     case '*':
-      corAnswer = (num1 * num2).toString();
+      corAnswer = num1 * num2;
       break;
     default:
-      corAnswer = (num1 + num2).toString();
+      corAnswer = num1 + num2;
   }
   return [ruleSet, question, corAnswer]; // Функция возвращает правила, вопрос и правильный ответ
 };
