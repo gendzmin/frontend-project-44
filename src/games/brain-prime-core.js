@@ -7,7 +7,7 @@ const getPrimality = (num) => { // Функция, проверяющая про
       return false;
     }
   }
-  return true;
+  return num !== 1;
 };
 const gameCore = () => {
   const ruleSet = 'Answer "yes" if given number is prime. Otherwise answer "no". '; // Правила для игры в чётность
