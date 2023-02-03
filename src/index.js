@@ -12,8 +12,7 @@ const gameTemplate = (gameCore) => {
     const gameData = gameCore(); // Вызов функции ядра игры, запись полученного массива в переменную
     const question = gameData[1]; // Запись в переменную вопроса (2й элемент массива )
     const corAnswer = gameData[2]; // Запись в переменную правильного ответа (3й элемент массива)
-    const userAnswer = readlineSync.question(`Question: ${question} `); // Получение ответа игрока
-    console.log(`Your answer: ${userAnswer}`); // Вывод на экран ответа игрока
+    const userAnswer = readlineSync.question(`Question: ${question}\nYour answer: `); // Получение ответа игрока
     if (userAnswer === corAnswer) { // Проверка правильности ответа через if
       console.log('Correct!'); // Продолжаем цикл, если ответ правильный
     } else {
