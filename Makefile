@@ -28,6 +28,9 @@ brain-calc: #Запуск игры brain-calc
 brain-gcd: #Запуск игры brain-gcd
 	node bin/brain-gcd.js
 
+brain-progression: #Запуск игры brain-progression
+	node bin/brain-progression.js
+
 code: #Запуск VS Code
 	code .
 

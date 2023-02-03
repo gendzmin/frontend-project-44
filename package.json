@@ -4,6 +4,7 @@
   "type": "module",
   "description": "[![Actions Status](https://github.com/gendzmin/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/gendzmin/frontend-project-44/actions)",
   "bin": {
+    "brain-progression": "bin/brain-progression.js",
     "brain-gcd": "bin/brain-gcd.js",
     "brain-calc": "bin/brain-calc.js",
     "brain-even": "bin/brain-even.js",

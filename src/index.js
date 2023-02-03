@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-
-const getRandomNum = () => Math.floor(Math.random() * (100 - 0) + 0); // Фун-генер. ранд. чис. 0-100
+// Фун-генер. ранд. чис. 0-100
+const getRandomNum = (max = 100, min = 0) => Math.floor(Math.random() * (max - min) + min);
 
 const gameTemplate = (gameCore) => {
   console.log('Welcome to the Brain Games!'); // Приветствие
