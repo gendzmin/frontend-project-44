@@ -19,16 +19,16 @@ Incorrect answers end the game and prompt you to play it again.
 ### Game tests:
 
 Calculus game
-[![asciicast](https://asciinema.org/a/818gBvTB9ouaeii13HWQ2MHvu.svg)](https://asciinema.org/a/818gBvTB9ouaeii13HWQ2MHvu)
+[![asciicast](https://asciinema.org/a/557126.svg)](https://asciinema.org/a/557126)
 
 Progression game
-[![asciicast](https://asciinema.org/a/557092.svg)](https://asciinema.org/a/557092)
+[![asciicast](https://asciinema.org/a/557129.svg)](https://asciinema.org/a/557129)
 
 Parity game
-[![asciicast](https://asciinema.org/a/PGSNkrgW07SE9E2zICJOHbYXx.svg)](https://asciinema.org/a/PGSNkrgW07SE9E2zICJOHbYXx)
+[![asciicast](https://asciinema.org/a/557131.svg)](https://asciinema.org/a/557131)
 
 GCD game
-[![asciicast](https://asciinema.org/a/556949.svg)](https://asciinema.org/a/556949)
+[![asciicast](https://asciinema.org/a/557148.svg)](https://asciinema.org/a/557148)
 
 Primality game
-[![asciicast](https://asciinema.org/a/557107.svg)](https://asciinema.org/a/557107)
+[![asciicast](https://asciinema.org/a/557152.svg)](https://asciinema.org/a/557152)
