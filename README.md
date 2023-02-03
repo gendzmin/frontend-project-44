@@ -10,7 +10,7 @@ Incorrect answers end the game and prompt you to play it again.
 **`GCD game`** - Determining the greatest common divisor.  
 **`Primality game`** - Determining a prime number.  
 
-### Requirments
+### Requirements
 Node.js v17.6  
 Windows 10 with WSL / macOS 10.15+ / any Linux distributive.  
 
