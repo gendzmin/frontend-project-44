@@ -15,7 +15,7 @@ const gameCore = () => {
     return sequence;
   };
   const progSequence = getProgSequence(progLength, progFirstNum, progStep); // Переменная с последов
-  const progAbsentNum = getRandomNum(10); // Переменная со случайным элементом последов. - от 0 до 9
+  const progAbsentNum = getRandomNum(progLength - 1); // Перем. со случ. элем. последов - не > длины
   const corAnswer = `${progSequence[progAbsentNum]}`; // Объявление и иниц. переменной правильного ответа
   progSequence[progAbsentNum] = '..'; // Замена нужного элемента последовательности на плейсхолдер
   const question = `${progSequence}`; // Объявление и инициализация строки-вопроса
