@@ -4,7 +4,7 @@ const gameCore = () => {
   const ruleSet = 'Answer "yes" if given number is prime. Otherwise answer "no". '; // Правила для игры в чётность
   const question = getRandomNum(); // Объявление и инициализация вопроса - рандомного числа
   const getPrimality = (num) => { // Функция, проверяющая простоту числа
-    for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {
+    for (let i = 2; i <= Math.sqrt(num); i += 1) {
       if (num % i === 0) {
         return 'no';
       }
