@@ -3,15 +3,19 @@ import { getRandomNum, gameTemplate } from '../index.js'; // Импортиру�
 const gameCore = () => {
   const ruleSet = 'Answer "yes" if given number is prime. Otherwise answer "no". '; // Правила для игры в чётность
   const question = getRandomNum(); // Объявление и инициализация вопроса - рандомного числа
+  const divisors = [2, 3, 5, 7];
   const getPrimality = (num) => { // Функция, проверяющая простоту числа
-    for (let i = 2; i <= Math.sqrt(num); i += 1) {
-      if (num % i === 0) {
+    for (let i = 0; i !== 4; i += 1) {
+      if (num % divisors[i] === 0) {
         return 'no';
       }
     }
-    return num > 1 ? 'yes' : 'no';
+    return 'yes';
   };
   const corAnswer = getPrimality(question); // // Объяв. и иниц. прав. ответа - строки `yes` / `no`
+  if (divisors.includes(question)) {
+    corAnswer = 'yes';
+    }
   return [ruleSet, question, corAnswer]; // Функция возвращает правила, вопрос и правильный ответ
 };
 
