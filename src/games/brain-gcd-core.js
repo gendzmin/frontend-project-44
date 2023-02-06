@@ -1,4 +1,5 @@
-import { getRandomNum, gameTemplate } from '../index.js'; // Импортируем функцию-рандомайзер и шаблон из index.js
+import gameTemplate from '../index.js'; // Импорт шаблона из index.js
+import getRandomNum from '../utils.js'; // Импорт функции-рандомизатора из utils.js
 
 const getGrComDiv = (a, b) => { // Функция, находящся НОД
   const c = a % b;
@@ -11,8 +12,8 @@ const gameCore = () => {
   const num1 = getRandomNum(100, 1); // Получение двух сгенерированных чисел
   const num2 = getRandomNum(num1, 1); // Второе число < первого - для корректной работы функции НОД
   const question = `${num1} ${num2}`; // Объявление и инициализация строки-вопроса
-  const corAnswer = getGrComDiv(num1, num2); // Объявление и иниц. переменной правильного ответа
-  return [ruleSet, question, corAnswer]; // Функция возвращает правила, вопрос и правильный ответ
+  const correctAnswer = getGrComDiv(num1, num2); // Объявление и иниц. переменной правильного ответа
+  return [ruleSet, question, correctAnswer]; // Функция возвращает правила, вопрос и прав. ответ
 };
 
 export { gameCore, gameTemplate }; // Экспортируем функции - ядро игры и шаблон

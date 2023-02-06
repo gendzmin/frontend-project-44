@@ -1,4 +1,5 @@
-import { getRandomNum, gameTemplate } from '../index.js'; // Импортируем функцию-рандомайзер и шаблон из index.js
+import gameTemplate from '../index.js'; // Импорт шаблона из index.js
+import getRandomNum from '../utils.js'; // Импорт функции-рандомизатора из utils.js
 
 const getProgSequence = (length, first, step) => { // Функция генерации последовательности
   const sequence = [];
@@ -16,10 +17,10 @@ const gameCore = () => {
   const progStep = getRandomNum(11, 3); // Генерация шага последовательности - от 3 до 10
   const progSequence = getProgSequence(progLength, progFirstNum, progStep); // Переменная с последов
   const progAbsentNum = getRandomNum(progLength - 1); // Перем. со случ. элем. последов - не > длины
-  const corAnswer = progSequence[progAbsentNum]; // Объявление и иниц. переменной правильного ответа
+  const correctAnswer = progSequence[progAbsentNum]; // Объявление и иниц. переменной прав. ответа
   progSequence[progAbsentNum] = '..'; // Замена нужного элемента последовательности на плейсхолдер
   const question = progSequence.join(' '); // Объявление и инициализация строки-вопроса
-  return [ruleSet, question, corAnswer]; // Функция возвращает правила, вопрос и правильный ответ
+  return [ruleSet, question, correctAnswer]; // Функция возвращает правила, вопрос и прав. ответ
 };
 
 export { gameCore, gameTemplate }; // Экспортируем функции - ядро игры и шаблон

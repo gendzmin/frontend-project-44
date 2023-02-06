@@ -1,27 +1,22 @@
 import readlineSync from 'readline-sync';
-// Фун-генер. ранд. чис. 0-100
-const getRandomNum = (max = 100, min = 0) => Math.floor(Math.random() * (max - min) + min);
 
-const gameTemplate = (gameCore) => {
+export default (gameCore) => {
   console.log('Welcome to the Brain Games!'); // Приветствие
   const userName = readlineSync.question('May I have your name? '); // Объявление и инициализация переменной - имени пользователя
   console.log(`Hello, ${userName}!`); // Приветствие игрока
   const ruleSet = gameCore()[0]; // Вывод на экран правил (1ый элемент массива из функции ядра игры)
   console.log(ruleSet);
-  for (let i = 0; i !== 3; i += 1) { // Цикл с тремя итерациями - игровой процесс
-    const gameData = gameCore(); // Вызов функции ядра игры, запись полученного массива в переменную
-    const question = gameData[1]; // Запись в переменную вопроса (2й элемент массива )
-    const corAnswer = gameData[2].toString(); // Запись в перем. прав. отв. (3й элемент массива)
+  const numOfRounds = 3;
+  for (let i = 0; i !== numOfRounds; i += 1) { // Цикл с тремя итерациями - игровой процесс
+    const [, question, correctAnswer] = gameCore();
     const userAnswer = readlineSync.question(`Question: ${question}\nYour answer: `); // Получение ответа игрока
-    if (userAnswer === corAnswer) { // Проверка правильности ответа через if
+    if (userAnswer === correctAnswer) { // Проверка правильности ответа через if
       console.log('Correct!'); // Продолжаем цикл, если ответ правильный
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${corAnswer}'.`); // Возвращаем функцию, если ответ неправильный
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`); // Возвращаем функцию, если ответ неправильный
       console.log(`Let's try again, ${userName}!`);
       return;
     }
   }
   console.log(`Congratulations, ${userName}!`); // Поздравление выводится, только если игрок ни разу не попал на возврат из функции
 };
-
-export { getRandomNum, gameTemplate }; // Экспорт функции-генератора ранд. числа - её исп. все игры
