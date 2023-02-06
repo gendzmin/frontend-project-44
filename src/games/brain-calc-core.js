@@ -21,7 +21,7 @@ const gameCore = () => {
   const operators = ['+', '-', '*']; // Массив операторов
   const operatorType = operators[getRandomNum(operators.length)]; // Генер. числа 0-2 и выбор опер.
   const question = `${num1} ${operatorType} ${num2}`; // Объявление и инициализация строки-вопроса
-  const correctAnswer = getCorrectAnswer(operatorType, num2, num2); // Переменная с прав. ответом
+  const correctAnswer = getCorrectAnswer(operatorType, num1, num2); // Переменная с прав. ответом
   return [ruleSet, question, correctAnswer]; // Функция возвращает правила, вопрос и прав. ответ
 };
 
