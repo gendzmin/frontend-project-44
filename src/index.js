@@ -10,7 +10,7 @@ export default (gameCore) => {
   for (let i = 0; i !== numOfRounds; i += 1) { // Цикл с тремя итерациями - игровой процесс
     const [, question, correctAnswer] = gameCore();
     const userAnswer = readlineSync.question(`Question: ${question}\nYour answer: `); // Получение ответа игрока
-    if (userAnswer === correctAnswer) { // Проверка правильности ответа через if
+    if (userAnswer === correctAnswer.toString()) { // Проверка правильности ответа через if
       console.log('Correct!'); // Продолжаем цикл, если ответ правильный
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`); // Возвращаем функцию, если ответ неправильный
