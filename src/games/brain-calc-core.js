@@ -13,16 +13,15 @@ const getCorrectAnswer = (operator, num1, num2) => { // Функ, возвр. р
       return num1 + num2;
   }
 };
-
+const ruleSet = 'What is the result of the expression?'; // Правила для игры-калькулятора
 const gameCore = () => {
-  const ruleSet = 'What is the result of the expression?'; // Правила для игры-калькулятора
   const num1 = getRandomNum(); // Получение двух сгенерированных чисел
   const num2 = getRandomNum();
   const operators = ['+', '-', '*']; // Массив операторов
   const operatorType = operators[getRandomNum(operators.length)]; // Генер. числа 0-2 и выбор опер.
   const question = `${num1} ${operatorType} ${num2}`; // Объявление и инициализация строки-вопроса
   const correctAnswer = getCorrectAnswer(operatorType, num1, num2); // Переменная с прав. ответом
-  return [ruleSet, question, correctAnswer]; // Функция возвращает правила, вопрос и прав. ответ
+  return [question, correctAnswer]; // Функция возвращает правила, вопрос и прав. ответ
 };
 
-export { gameCore, gameTemplate }; // Экспортируем функции - ядро игры и шаблон
+export { ruleSet, gameCore, gameTemplate }; // Экспорт правил игры и функций - ядра игры и шаблона

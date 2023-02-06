@@ -10,8 +10,8 @@ const getProgSequence = (length, first, step) => { // Функция генер�
   }
   return sequence;
 };
+const ruleSet = 'What number is missing in the progression?'; // Правила для игры-прогрессии
 const gameCore = () => {
-  const ruleSet = 'What number is missing in the progression?'; // Правила для игры-прогрессии
   const progLength = getRandomNum(11, 6); // Генерация длины последовательности - от 6 до 10
   const progFirstNum = getRandomNum(); // Генерация первого числа последовательности
   const progStep = getRandomNum(11, 3); // Генерация шага последовательности - от 3 до 10
@@ -20,7 +20,7 @@ const gameCore = () => {
   const correctAnswer = progSequence[progAbsentNum]; // Объявление и иниц. переменной прав. ответа
   progSequence[progAbsentNum] = '..'; // Замена нужного элемента последовательности на плейсхолдер
   const question = progSequence.join(' '); // Объявление и инициализация строки-вопроса
-  return [ruleSet, question, correctAnswer]; // Функция возвращает правила, вопрос и прав. ответ
+  return [question, correctAnswer]; // Функция возвращает правила, вопрос и прав. ответ
 };
 
-export { gameCore, gameTemplate }; // Экспортируем функции - ядро игры и шаблон
+export { ruleSet, gameCore, gameTemplate }; // Экспорт правил игры и функций - ядра игры и шаблона
