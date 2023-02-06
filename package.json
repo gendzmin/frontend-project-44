@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/gendzmin/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/gendzmin/frontend-project-44/actions)",
+  "description": "This is `Brain Games` - a set of five console games based on popular mobile brain-pumping apps.",
   "bin": {
     "brain-prime": "bin/brain-prime.js",
     "brain-progression": "bin/brain-progression.js",

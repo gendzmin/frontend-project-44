@@ -1,9 +1,9 @@
 ### Description
-"Brain Games" is a set of five console games based on the popular mobile brain-pumping apps.   
+This is "Brain Games" - a set of five console games based on popular mobile brain-pumping apps.   
 Each game asks questions that need to be answered correctly. After three correct answers, the game is considered completed.  
 Incorrect answers end the game and prompt you to play it again.  
 
-### Games:
+### Games
 **`Calculus game`** - Calculating arithmetic expressions.  
 **`Progression game`** - Determining a missing number in a sequence of numbers.  
 **`Parity game`** - Determining an even number.  
@@ -21,24 +21,24 @@ Windows 10 with WSL / macOS 10.15+ / any Linux distributive.
 4. To play games, use commands given in **`Makefile`** or **`pasckage.json`**.
 
 
-### Hexlet tests and linter status:
+### Hexlet tests and linter status
 [![Actions Status](https://github.com/gendzmin/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/gendzmin/frontend-project-44/actions)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/d3df1974005f6b4bc462/maintainability)](https://codeclimate.com/github/gendzmin/frontend-project-44/maintainability)
 
-### Game tests:
+### Game tests
 
-Calculus game
+**`Calculus game`**
 [![asciicast](https://asciinema.org/a/557126.svg)](https://asciinema.org/a/557126)
 
-Progression game
+**`Progression game`**
 [![asciicast](https://asciinema.org/a/557164.svg)](https://asciinema.org/a/557164)
 
-Parity game
+**`Parity game`**
 [![asciicast](https://asciinema.org/a/557131.svg)](https://asciinema.org/a/557131)
 
-GCD game
+**`GCD game`**
 [![asciicast](https://asciinema.org/a/557148.svg)](https://asciinema.org/a/557148)
 
-Primality game
+**`Primality game`**
 [![asciicast](https://asciinema.org/a/557152.svg)](https://asciinema.org/a/557152)
