@@ -12,7 +12,12 @@ const getPrimality = (num) => { // Функция, проверяющая про
 const ruleSet = 'Answer "yes" if given number is prime. Otherwise answer "no". '; // Правила для игры в чётность
 const gameCore = () => {
   const question = getRandomNum(100); // Объявление и инициализация вопроса - рандомного числа
-  const correctAnswer = getPrimality(question) ? 'yes' : 'no'; // // Объявление и инициализация правильного ответа
+  const getCorrectAnswer = (boolean) => { // Функция, возвращающая 'yes' или 'no' для прав. ответа
+    if (boolean) {
+      return 'yes';
+    } return 'no';
+  };
+  const correctAnswer = getCorrectAnswer(getPrimality(question)); // Получение правильного ответа
   return [question, correctAnswer]; // Функция возвращает правила, вопрос и прав. ответ
 };
 
