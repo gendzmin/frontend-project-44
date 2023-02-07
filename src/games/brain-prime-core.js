@@ -12,8 +12,8 @@ const getPrimality = (num) => { // Функция, проверяющая про
 const ruleSet = 'Answer "yes" if given number is prime. Otherwise answer "no". '; // Правила для игры в чётность
 const gameCore = () => {
   const question = getRandomNum(100); // Объявление и инициализация вопроса - рандомного числа
-  const correctAnswer = getPrimality(question) ? 'yes' : 'no'; // // Объяв. и иниц. прав. ответа
-  return [question, correctAnswer]; // Функция возвращает правила, вопрос и прав. ответ
+  const answer = getPrimality(question) ? 'yes' : 'no'; // // Объяв. и иниц. прав. ответа
+  return [question, answer]; // Функция возвращает правила, вопрос и прав. ответ
 };
 
 export { ruleSet, gameCore }; // Экспорт правил игры и функций - ядра игры и шаблона
