@@ -1,4 +1,3 @@
-import gameTemplate from '../index.js'; // Импорт шаблона из index.js
 import getRandomNum from '../utils.js'; // Импорт функции-рандомизатора из utils.js
 
 const getPrimality = (num) => { // Функция, проверяющая простоту числа
@@ -12,9 +11,9 @@ const getPrimality = (num) => { // Функция, проверяющая про
 };
 const ruleSet = 'Answer "yes" if given number is prime. Otherwise answer "no". '; // Правила для игры в чётность
 const gameCore = () => {
-  const question = getRandomNum(); // Объявление и инициализация вопроса - рандомного числа
+  const question = getRandomNum(100); // Объявление и инициализация вопроса - рандомного числа
   const correctAnswer = getPrimality(question) ? 'yes' : 'no'; // // Объяв. и иниц. прав. ответа
   return [question, correctAnswer]; // Функция возвращает правила, вопрос и прав. ответ
 };
 
-export { ruleSet, gameCore, gameTemplate }; // Экспорт правил игры и функций - ядра игры и шаблона
+export { ruleSet, gameCore }; // Экспорт правил игры и функций - ядра игры и шаблона

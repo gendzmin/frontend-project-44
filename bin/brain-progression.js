@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import { ruleSet, gameCore, gameTemplate } from '../src/games/brain-progression-core.js'; // Импортируем уникальное ядро игры и универсальный шаблон из файла с ядром игры в папке bin/games;
+import { ruleSet, gameCore } from '../src/games/brain-progression-core.js'; // Импорт правил и уникального ядра игры из bin/games;
+import gameTemplate from '../src/index.js'; // Импорт универсального шаблона из src/index.js;
 
-gameTemplate(ruleSet, gameCore); // Вызываем функцию-шаблон с аргументом - ядром игры-прогрессии
+gameTemplate(ruleSet, gameCore); // Вызов функции-шаблона с аргументами - правилами и ядром игры

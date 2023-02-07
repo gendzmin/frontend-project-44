@@ -1,4 +1,3 @@
-import gameTemplate from '../index.js'; // Импорт шаблона из index.js
 import getRandomNum from '../utils.js'; // Импорт функции-рандомизатора из utils.js
 
 const getCorrectAnswer = (operator, num1, num2) => { // Функ, возвр. результат вычисл. с выбр. опер.
@@ -24,4 +23,4 @@ const gameCore = () => {
   return [question, correctAnswer]; // Функция возвращает правила, вопрос и прав. ответ
 };
 
-export { ruleSet, gameCore, gameTemplate }; // Экспорт правил игры и функций - ядра игры и шаблона
+export { ruleSet, gameCore }; // Экспорт правил игры и функций - ядра игры и шаблона
