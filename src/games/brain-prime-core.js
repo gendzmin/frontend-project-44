@@ -12,11 +12,12 @@ const getPrimality = (num) => { // Функция, проверяющая про
 const ruleSet = 'Answer "yes" if given number is prime. Otherwise answer "no". '; // Правила для игры в чётность
 const gameCore = () => {
   const question = getRandomNum(100); // Объявление и инициализация вопроса - рандомного числа
-  const correctAnswer = () => { // Объяв. и иниц. прав. ответа
-    if (getPrimality(question)) {
+  const getCorrectAnswer = (boolean) => { // Объяв. и иниц. прав. ответа
+    if (boolean) {
       return 'yes';
     } return 'no';
   };
+  const correctAnswer = getCorrectAnswer(getPrimality(question));
   return [question, correctAnswer]; // Функция возвращает правила, вопрос и прав. ответ
 };
 
